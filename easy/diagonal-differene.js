@@ -4,6 +4,7 @@ function diagonalDifference(arr) {
     let n = arr.length;
     let diagonal1 = 0;
     let diagonal2 = 0;
+
     arr.forEach((item, i) => {
         arr.forEach((item, j) => {
             if(i === j) { 
