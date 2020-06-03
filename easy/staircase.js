@@ -1,5 +1,7 @@
 /*https://www.hackerrank.com/challenges/staircase/problem*/
 
+//Solution ¹1
+
 function staircase(n) {
     let num = parseInt(n);
  
@@ -11,3 +13,15 @@ function staircase(n) {
         console.log(s);
     }
 }
+
+//Solution ¹2
+
+function staircase(n) {
+    [...Array(n)].map(
+        (x, i) => [...Array(n)].map(
+            (y, j) => j < n - 1 - i ? " " : "#"
+        )
+    ).map(x => console.log(x.join(''))); 
+}
+
+
